@@ -91,7 +91,60 @@
         <img src="asset/1.png" alt="Testimonial 1">
         <img src="asset/2.png" alt="Testimonial 2">
         <img src="asset/3.png" alt="Testimonial 3">
+        
+    </div>
+    <div class="testimonials_video">
+        <video controls><source src="video/testimonial_1.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+        <video controls><source src="video/testimonial_2.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+        <video controls><source src="video/testimonial_3.mp4" type="video/mp4">Your browser does not support the video tag.</video>
     </div>
     </div>
+    <!-- Ajout de la section du formulaire -->
+<div id="form">
+    <h3>Contact Form</h3>
+    <form action="#" method="post">
+        <!-- Menu déroulant -->
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <!-- Boîte de texte -->
+        <label for="text">Text input:</label>
+        <input type="text" id="text" name="text" placeholder="Enter text">
+
+        <!-- Zone de texte -->
+        <label for="textarea">Textarea:</label>
+        <textarea id="textarea" name="textarea" rows="4" placeholder="Enter your message"></textarea>
+
+        <!-- Boutons de case à cocher -->
+        <label>Checkbox options:</label>
+        <div>
+            <input type="checkbox" id="checkbox1" name="checkbox[]" value="checkbox1">
+            <label for="checkbox1">Checkbox 1</label>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox2" name="checkbox[]" value="checkbox2">
+            <label for="checkbox2">Checkbox 2</label>
+        </div>
+
+        <!-- Boutons radio -->
+        <label>Radio options:</label>
+        <div>
+            <input type="radio" id="radio1" name="radio" value="radio1">
+            <label for="radio1">Radio 1</label>
+        </div>
+        <div>
+            <input type="radio" id="radio2" name="radio" value="radio2">
+            <label for="radio2">Radio 2</label>
+        </div>
+
+        <!-- Bouton de soumission -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
 </body>
 </html>
