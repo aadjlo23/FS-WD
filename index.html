@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="logo_img" id="logo">
+    <header id="header">
+        <div id="logo" class="logo_img">
             <img src="asset/logo.png" alt="Course Logo">
         </div>
+        
         <div id="title">
             <h2>FSWD</h2>
             <h1>Practical Course</h1>
         </div>
-    </div>
-
-    <ul id="menu">
-        <li><a href="#description">Description</a></li>
-        <li><a href="#participants">Participants</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-    </ul>
-
+    
+        <nav>
+            <ul id="menu">
+                <li><a href="#description">Description</a></li>
+                <li><a href="#participants">Participants</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="https://pll.harvard.edu/catalog/free" target="_blank">Harvard Course</a></li>
+                <li><a href="https://www.example.com" target="_blank">Visit Example.com</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="description">
-        <h3>Course Description</h3>
+        <h2>Course Description</h2>
         <p class="description_text">In our dynamic Full Stack Development course, participants will embark on an immersive learning experience 
             designed to equip them with the skills needed to thrive in the rapidly evolving field of web development. 
             Covering both front-end and back-end technologies, this comprehensive program delves into the fundamentals of HTML, CSS, and 
@@ -140,11 +144,21 @@
             <input type="radio" id="radio2" name="radio" value="radio2">
             <label for="radio2">Radio 2</label>
         </div>
-
+        <div id="htmlEmbedExample">
+            <h3>HTML Embed Example</h3>
+            <embed src="example.pdf" type="application/pdf" width="500" height="400">
+        </div>
+        <div id="htmlIframeExample">
+            <h3>HTML Iframe Example</h3>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
         <!-- Bouton de soumission -->
         <button type="submit">Submit</button>
     </form>
 </div>
-
+<footer id="footer">
+    <p>&copy; 2024 My FSWD Course. All rights reserved.</p>
+</footer>
 </body>
 </html>
