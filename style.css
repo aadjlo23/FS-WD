@@ -140,4 +140,41 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
-/* Ajoutez vos propres styles spécifiques au besoin */
+/* styles.css */
+
+/* Effet de survol sur les liens du menu */
+#menu li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Ajoute une transition fluide pour le changement de couleur */
+}
+
+#menu li a:hover {
+    color: #007bff; /* Change la couleur du texte au survol */
+}
+
+/* Effet de transition sur les images des témoignages */
+#testimonials img {
+    width: 20%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border: solid 2px blue;
+    transition: transform 0.3s ease; /* Ajoute une transition fluide lors du survol */
+}
+
+#testimonials img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+/* Effet d'ombre sur les boîtes de texte du formulaire */
+input[type="text"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+}
+
