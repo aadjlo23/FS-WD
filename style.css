@@ -140,18 +140,35 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
-/* styles.css */
-
-/* Effet de survol sur les liens du menu */
-#menu li a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Ajoute une transition fluide pour le changement de couleur */
+/* Styles pour la barre de navigation */
+#navbar {
+    background-color: #007bff; /* Couleur de fond de la navbar */
+    padding: 10px; /* Espacement interne */
 }
 
-#menu li a:hover {
-    color: #007bff; /* Change la couleur du texte au survol */
+#navbar ul {
+    list-style: none; /* Supprime les puces de liste */
+    margin: 0;
+    padding: 0;
 }
+
+#navbar ul li {
+    display: inline; /* Affiche les éléments de la liste en ligne */
+    margin-right: 20px; /* Marge à droite pour espacer les éléments */
+}
+
+#navbar ul li a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprime les soulignements des liens */
+    padding: 5px 10px; /* Espacement interne */
+    border-radius: 5px; /* Bord arrondi */
+    transition: background-color 0.3s; /* Transition de couleur de fond */
+}
+
+#navbar ul li a:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
 
 /* Effet de transition sur les images des témoignages */
 #testimonials img {
