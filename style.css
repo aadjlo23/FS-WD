@@ -1,197 +1,109 @@
 /* styles.css */
 
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+/* Header styles */
 #header {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
-.logo_img img {
-    margin-right: 20px;
-    width: 25%;
+#logo img {
+    height: 50px;
+    margin-left: 20px;
 }
 
-#header h1 {
-    font-size: 1.5em;
-}
-
-#header h2 {
-    font-size: 1em;
-}
-
-#menu {
+#navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-#menu li {
+#navbar ul li {
     margin-right: 20px;
 }
 
-#description, #participants, #testimonials {
-    margin-top: 20px;
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
+#navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main content styles */
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Participants table styles */
 .participant-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .participant-table th, .participant-table td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
     text-align: left;
 }
 
-#testimonials img {
-    width: 20%;
-    margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    border: solid 2px blue;
-}
-.testimonials_img{
+/* Testimonials styles */
+.testimonials {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.testimonials_video{
-    display: flex;
-    justify-content: space-around;
+
+.testimonial {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
 }
-.testimonials_video video{
-    width: 20%;
-    margin: 10px;
-    border: 1px solid #ddd;
+
+.testimonial img {
+    width: 100%;
     border-radius: 5px;
-    border: solid 2px red;
-
-}
-/* styles.css */
-
-#form {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin:5% 25%;
 }
 
-#form h3 {
-    color: #333;
+.testimonial p {
+    font-size: 1.1em;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+/* Footer styles */
+#footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
-
-label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #555;
-}
-
-select,
-input,
-textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-textarea {
-    resize: vertical; /* Permet le redimensionnement vertical uniquement */
-}
-
-button {
-    padding: 12px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 30%;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* Styles pour les cases à cocher et les boutons radio */
-div {
-    margin-bottom: 10px;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-/* Styles pour la barre de navigation */
-#navbar {
-    background-color: #007bff; /* Couleur de fond de la navbar */
-    padding: 10px; /* Espacement interne */
-}
-
-#navbar ul {
-    list-style: none; /* Supprime les puces de liste */
-    margin: 0;
-    padding: 0;
-}
-
-#navbar ul li {
-    display: inline; /* Affiche les éléments de la liste en ligne */
-    margin-right: 20px; /* Marge à droite pour espacer les éléments */
-}
-
-#navbar ul li a {
-    color: white; /* Couleur du texte des liens */
-    text-decoration: none; /* Supprime les soulignements des liens */
-    padding: 5px 10px; /* Espacement interne */
-    border-radius: 5px; /* Bord arrondi */
-    transition: background-color 0.3s; /* Transition de couleur de fond */
-}
-
-#navbar ul li a:hover {
-    background-color: #0056b3; /* Couleur de fond au survol */
-}
-
-
-/* Effet de transition sur les images des témoignages */
-#testimonials img {
-    width: 20%;
-    margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    border: solid 2px blue;
-    transition: transform 0.3s ease; /* Ajoute une transition fluide lors du survol */
-}
-
-#testimonials img:hover {
-    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
-}
-
-/* Effet d'ombre sur les boîtes de texte du formulaire */
-input[type="text"],
-textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
-}
-
