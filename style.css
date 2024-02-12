@@ -23,8 +23,11 @@ body {
 #header-titles {
     text-align: left;
     margin-right:40px ;
+    transition: transform 0.3s ease;
 }
-
+#header-titles:hover {
+transform: scale(1.1); /* Agrandissement au survol */
+}
 #main-title h1 {
     margin: 0;
     font-size: 1.5em;
@@ -122,6 +125,11 @@ p {
     width: 100%;
     border-radius: 5px;
     border: solid 2px blue;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+#testimonials img:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+    border-color: #4CAF50; /* Changement de couleur de la bordure au survol */
 }
 .testimonial video {
     width: 100%;
