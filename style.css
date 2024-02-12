@@ -21,7 +21,7 @@ body {
 
 /* Header styles */
 #header-titles {
-    text-align: right;
+    text-align: left;
     margin-right:40px ;
 }
 
@@ -121,6 +121,12 @@ p {
 .testimonial img {
     width: 100%;
     border-radius: 5px;
+    border: solid 2px blue;
+}
+.testimonial video {
+    width: 100%;
+    border-radius: 5px;
+    border: solid red 2px;
 }
 
 .testimonial p {
