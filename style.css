@@ -173,3 +173,76 @@ nav {
 #menu li a:hover {
     background-color: #555; /* Change la couleur de fond au survol */
 }
+/* Styles pour le formulaire */
+#form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5% auto; /* Centre le formulaire horizontalement */
+    max-width: 600px; /* Limite la largeur du formulaire */
+}
+
+#form h3 {
+    color: #333;
+    margin-bottom: 20px; /* Espace supplémentaire sous le titre */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+textarea,
+select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%; /* Ajuste la largeur du bouton */
+    align-self: center; /* Centre le bouton horizontalement */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styles pour les cases à cocher et les boutons radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Alignement horizontal des cases à cocher */
+div.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label {
+    margin-right: 10px;
+}
+
