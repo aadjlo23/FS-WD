@@ -22,6 +22,7 @@ body {
 /* Header styles */
 #header-titles {
     text-align: right;
+    margin-right:40px ;
 }
 
 #main-title h1 {
@@ -56,7 +57,7 @@ body {
 }
 
 #logo img {
-    height: 90px;
+    height: 110px;
     margin-left: 20px;
 }
 
