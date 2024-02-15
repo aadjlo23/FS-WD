@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Global styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -85,7 +83,7 @@ transform: scale(1.1); /* Agrandissement au survol */
     color: #ffcc00;
 }
 
-/* Main content styles */
+/* style général */
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -96,7 +94,7 @@ p {
     line-height: 1.6;
 }
 
-/* Participants table styles */
+/*Participants style */
 .participant-table {
     width: 100%;
     border-collapse: collapse;
@@ -109,7 +107,7 @@ p {
     text-align: left;
 }
 
-/* Testimonials styles */
+/* Testimonials style*/
 .testimonials {
     display: flex;
     justify-content: space-between;
@@ -128,7 +126,7 @@ p {
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 #testimonials img:hover {
-    transform: scale(1.1); /* Agrandissement au survol */
+    transform: scale(1.1); /* Agrandissement au survol*/
     border-color: #4CAF50; /* Changement de couleur de la bordure au survol */
 }
 .testimonial video {
@@ -141,14 +139,14 @@ p {
     font-size: 1.1em;
 }
 
-/* Footer styles */
+/*Footer style */
 #footer {
     background-color: #343a40;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
-/* Navbar */
+/* Navbar*/
 nav {
     background-color: #333;
     padding: 10px 0;
