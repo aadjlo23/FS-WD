@@ -26,10 +26,6 @@ body {
 #header-titles:hover {
 transform: scale(1.1); /* Agrandissement au survol */
 }
-#main-title h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
 
 #sub-title h2 {
     margin: 0;
